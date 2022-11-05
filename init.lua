@@ -133,6 +133,8 @@ require('packer').startup(function(use)
   use {'L3MON4D3/LuaSnip'}
   use {'rafamadriz/friendly-snippets'}
 
+  -- Command Completion
+  use 'smolck/command-completion.nvim'
   if install_plugins then
     require('packer').sync()
   end
@@ -517,3 +519,21 @@ if vim.g.lsp_setup_ready == nil then
   lspconfig.bashls.setup({})
   lspconfig.pylsp.setup({})
 end
+
+---
+-- Command completion
+---
+
+require('command-completion').setup {
+  border = nil, -- What kind of border to use, passed through directly to `nvim_open_win()`,
+                -- see `:help nvim_open_win()` for available options (e.g. 'single', 'double', etc.)
+  max_col_num = 5, -- Maximum number of columns to display in the completion window
+  min_col_width = 20, -- Minimum width of completion window columns
+  use_matchfuzzy = true, -- Whether or not to use `matchfuzzy()` (see `:help matchfuzzy()`) 
+                         -- to order completion results
+  highlight_selection = true, -- Whether or not to highlight the currently
+                              -- selected item, not sure why this is an option tbh
+  highlight_directories = true, -- Whether or not to higlight directories with
+                                -- the Directory highlight group (`:help hl-Directory`)
+  tab_completion = true, -- Whether or not tab completion on displayed items is enabled
+}
