@@ -26,6 +26,7 @@ use {
   }
 use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 use {'tpope/vim-fugitive'}
+use "nvim-lua/plenary.nvim"
 
 
 end)
