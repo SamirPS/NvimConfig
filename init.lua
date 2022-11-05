@@ -14,8 +14,10 @@ vim.cmd("colorscheme carbonfox")
 require("nvim-tree").setup()
 
 require("toggleterm").setup{
+   open_mapping = '<C-t>',
    direction ='horizontal',
    shell = 'bash',
+   shade_terminals = true
   }
 
 require('lualine').setup({

@@ -25,6 +25,7 @@ use {
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+use {'tpope/vim-fugitive'}
 
 
 end)
