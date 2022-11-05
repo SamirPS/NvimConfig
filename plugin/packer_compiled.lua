@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/samir/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/samir/.local/share/nvim/site/pack/packer/start/packer.nvim",
