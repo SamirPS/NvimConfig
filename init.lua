@@ -11,3 +11,7 @@ require('plugins')
 vim.cmd("colorscheme carbonfox")
 require("nvim-tree").setup()
 
+require("toggleterm").setup{
+   direction ='horizontal',
+   shell = 'bash',
+  }

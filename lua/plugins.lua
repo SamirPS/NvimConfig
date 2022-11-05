@@ -9,4 +9,5 @@ return require('packer').startup(function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+  use {"akinsho/toggleterm.nvim", tag = '*'}
 end)
