@@ -9,5 +9,8 @@ return require('packer').startup(function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
-  use {"akinsho/toggleterm.nvim", tag = '*'}
+  use {'akinsho/toggleterm.nvim', tag = '*'}
+  use {'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)

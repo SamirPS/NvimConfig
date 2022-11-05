@@ -4,6 +4,8 @@ vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
+vim.opt.showmode = false
+
 require('plugins')
 
 
@@ -15,3 +17,12 @@ require("toggleterm").setup{
    direction ='horizontal',
    shell = 'bash',
   }
+
+require('lualine').setup({
+    options = {
+      theme = 'nightfly',
+      icons_enabled = true,
+      component_separators = '|',
+      section_separators = '',
+    },
+  })
