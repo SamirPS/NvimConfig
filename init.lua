@@ -518,6 +518,7 @@ if vim.g.lsp_setup_ready == nil then
   -- See :help lspconfig-setup
   lspconfig.bashls.setup({})
   lspconfig.pylsp.setup({})
+  lspconfig.gopls.setup({})
 end
 
 ---
