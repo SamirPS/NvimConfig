@@ -84,6 +84,7 @@ require('packer').startup(function(use)
   use {'wbthomason/packer.nvim'}
 
   -- Theming
+  use {'EdenEast/nightfox.nvim'}
   use {'folke/tokyonight.nvim'}
   use {'joshdick/onedark.vim'}
   use {'tanvirtin/monokai.nvim'}
@@ -159,7 +160,7 @@ end
 -- Colorscheme
 ---
 vim.opt.termguicolors = true
-vim.cmd('colorscheme onedark')
+vim.cmd('colorscheme carbonfox')
 
 
 ---
@@ -176,7 +177,7 @@ vim.opt.showmode = false
 -- See :help lualine.txt
 require('lualine').setup({
   options = {
-    theme = 'onedark',
+    theme = 'ayu_mirage',
     icons_enabled = true,
     component_separators = '|',
     section_separators = '',

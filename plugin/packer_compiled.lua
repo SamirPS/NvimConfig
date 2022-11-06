@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/samir/.local/share/nvim/site/pack/packer/start/monokai.nvim",
     url = "https://github.com/tanvirtin/monokai.nvim"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/samir/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/samir/.local/share/nvim/site/pack/packer/start/nvim-cmp",
